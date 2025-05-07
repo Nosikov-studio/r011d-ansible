@@ -88,11 +88,11 @@
         pm2 describe backend || pm2 start /var/www/trur/app.js --name backend
         pm2 save
 
-    - name: Ensure pm2 service is enabled and started
-      systemd:
-        name: pm2-ubuntu
-        enabled: yes
-        state: started
+    # - name: Ensure pm2 service is enabled and started
+    #   systemd:
+    #     name: pm2-ubuntu
+    #     enabled: yes
+    #     state: started
 
 
 #---------------------------------------------------------2
