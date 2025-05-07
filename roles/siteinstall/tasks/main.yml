@@ -85,7 +85,7 @@
     - name: Start or restart app with pm2
       become_user: root
       shell: |
-        pm2 describe app || pm2 start /var/www/trur/app.js --name backend
+        pm2 describe backend || pm2 start /var/www/trur/app.js --name backend
         pm2 save
 
     - name: Ensure pm2 service is enabled and started
