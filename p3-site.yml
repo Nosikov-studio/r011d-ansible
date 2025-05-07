@@ -1,0 +1,19 @@
+---
+- name: Install my site
+  become: yes
+  hosts: all
+
+  roles:
+    - test-role
+    - nodejs
+    - mysqlinstall
+    - mysqldump
+    - nginxdefault    
+    - phpinstall
+    - test-php
+    - adminer
+    - siteinstall
+    - rsyncinstall
+    - adminer2
+    # - phpmyadmin
+    # - letsencrypt
